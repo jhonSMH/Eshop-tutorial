@@ -6,7 +6,10 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: ['https://eshop-tutorial-pyri.vercel.app',],
+  origin: [
+    'https://eshop-tutorial-pyri.vercel.app', // Origen de producción
+    'http://localhost:3000', // Origen de desarrollo local
+  ],
   credentials: true
 }));
 
